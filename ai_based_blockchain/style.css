@@ -7,6 +7,27 @@
 body {
     background-color: #000000;
     color: #ffffff;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Space Grotesk", serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 723px;
+    justify-content: center;
+    align-items: center;
+    height: 411px;
+    margin: auto;
+    gap: 15px;
 }
 
 section:last-of-type {
@@ -15,7 +36,8 @@ section:last-of-type {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    height: 73vh;
+    height: 80vh;
+    width: 100vw;
 }
 
 h1 {
@@ -30,4 +52,77 @@ h1 {
     color: transparent;
     /* Make text transparent to show the gradient */
     display: inline;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+section:nth-child(2) p {
+    font-size: 18px;
+    font-weight: 100;
+    width: 723px;
+    letter-spacing: .72px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    width: 1336px;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+nav a:first-of-type:not(ul a) {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 594px;
+}
+
+nav ul a {
+    color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+    outline: unset;
+    border: unset;
+    background: transparent;
+    font-family: inherit;
+    width: 176px;
+    height: 70px;
+    padding: 22px 32px;
+    font-size: 20px;
+    transition: background 0.3s ease;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.btn button:first-of-type {
+    color: #ffffff;
+    background-color: #ee0979;
+    margin-right: 15px;
+}
+
+.btn button:nth-child(2) {
+    color: #000000;
+    background: linear-gradient(45deg, #497CFF, #6A9FFF);
 }
