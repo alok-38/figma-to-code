@@ -17,3 +17,17 @@ section:last-of-type {
     background-attachment: fixed;
     height: 73vh;
 }
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    /* Gradient colors */
+    -webkit-background-clip: text;
+    /* For Safari */
+    background-clip: text;
+    /* For modern browsers */
+    color: transparent;
+    /* Make text transparent to show the gradient */
+    display: inline;
+}
